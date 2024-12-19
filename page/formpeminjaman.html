@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form peminjaman</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../asset/img/logoRPL.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="formpeminjaman.html">Formulir peminjaman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="barangPeminjaman.html">Barang peminjaman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kritik&saran.html">Kritik & Saran</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <section class="form-peminjaman">
+        <div class="container" id="formnyah">
+            <div class="row">
+                <div class="col-lg-3 col-md-2">
+                    <div class="form-img">
+                        <img src="../asset/img/form-pict.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-10">
+                    <div class="form-text">
+                        <h3>Form peminjaman</h3> 
+                        <hr class="garistebel">
+                        <!-- Gabungkan formulir di sini -->
+                        <form action="" id="formpeminjaman">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <label for="NamaPeminjam">Nama Peminjam: </label> <br>
+                                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" required>
+                                    <br> <br>
+                                    <label for="KelasPeminjam">Kelas: </label> <br>
+                                    <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas anda" required>
+                                    <br> <br>
+                                    <label for="BarangDipinjam">Barang yang dipinjam: </label> <br>
+                                    <select name="barang" id="barang">
+                                      <option value="" id="pilih" selected>Pilih barang yang ingin dipinjam: </option>
+                                      <option value="Stop kontak">Stop kontak</option>
+                                      <option value="LCD proyektor">LCD proyektor</option>
+                                      <option value="Speaker">Speaker</option>
+                                      <option value="Laptop">Laptop</option>
+                                    </select>
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                  <label for="NamaPeminjam">Nama Petugas: </label> <br>
+                                  <input type="text" id="namapetugas" name="namapetugas" placeholder="Masukkan nama petugas" required>
+                                  <br> <br>
+                                  <label for="DariJam">Jam peminjaman dari jam: </label> <br>
+                                  <input type="time" id="darijam" name="jam" placeholder="Masukkan jam peminjaman" required>
+                                  <br> <br>
+                                  <label for="SampaiJam">Sampai jam: </label> <br>
+                                  <input type="time" id="sampaijam" name="jam" placeholder="Masukkan jam peminjaman" required>
+                                </div>
+                              </div>
+                            <input type="submit" value="Simpan" id="simpan" onclick="submitForm()">
+                                
+                            </div>
+                            <!-- Tombol submit berada di dalam formulir -->
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </section>
+<script src="../script.js">
+  
+</script>
+
+</body>
+</html>
+
